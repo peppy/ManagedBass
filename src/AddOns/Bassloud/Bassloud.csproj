@@ -1,12 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.1</TargetFramework>
-        <Nullable>enable</Nullable>
+        <Nullable>disable</Nullable>
         <LangVersion>8</LangVersion>
-        <AssemblyName>ManagedBass.Loud</AssemblyName>
-        <PackageId>ManagedBass.Loud</PackageId>
-        <Authors />
+        <AssemblyName>ppy.ManagedBass.Loud</AssemblyName>
+        <PackageId>ppy.ManagedBass.Loud</PackageId>
+        <Authors>MathewSachin</Authors>
+        <Version>3.0.5</Version>
+        <Description>ManagedBass BASSLoud AddOn</Description>
+        <PackageProjectUrl>https://github.com/ManagedBass/ManagedBass</PackageProjectUrl>
+        <PackageIcon>icon.png</PackageIcon>
+        <RepositoryUrl>https://github.com/ManagedBass/ManagedBass</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <Product>ppy.ManagedBass.Loud</Product>
     </PropertyGroup>
 
     <ItemGroup>
