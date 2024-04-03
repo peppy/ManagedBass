@@ -2,8 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
-    <AssemblyName>ManagedBass.Enc</AssemblyName>
+    <AssemblyName>ppy.ManagedBass.Enc</AssemblyName>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageId>ppy.ManagedBass.Enc</PackageId>
+    <Product>ppy.ManagedBass.Enc</Product>
   </PropertyGroup>
 
   <ItemGroup>
