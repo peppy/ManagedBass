@@ -717,35 +717,36 @@ namespace ManagedBass
         #endregion
 
         #region BassLoud
+
         /// <summary>
         /// BassLoud add-on: Loudness in LUFS of the last 400ms or the duration (in milliseconds) specified in the HIWORD
         /// </summary>
-		BassLoudnessCurrent = 0,
+        BassLoudnessCurrent = 0,
 
         /// <summary>
         /// BassLoud add-on: Integrated loudness in LUFS. This is the average since measurement started.
         /// </summary>
-		BassLoudnessIntegrated = 1,
+        BassLoudnessIntegrated = 1,
 
         /// <summary>
         /// BassLoud add-on: Loudness range in LU.
         /// </summary>
-		BassLoudnessRange = 2,
+        BassLoudnessRange = 2,
 
         /// <summary>
         /// BassLoud add-on: Peak level in linear scale.
         /// </summary>
-		BassLoudnessPeak = 4,
+        BassLoudnessPeak = 4,
 
         /// <summary>
         /// BassLoud add-on: True peak level in linear scale.
         /// </summary>
-		BassLoudnessTruePeak = 8,
+        BassLoudnessTruePeak = 8,
 
         /// <summary>
         /// BassLoud add-on: Automatically free the measurement when the channel is freed.
         /// </summary>
-		BassLoudnessAutofree = 0x8000,
+        BassLoudnessAutofree = 0x8000,
         #endregion
 
         /// <summary>
