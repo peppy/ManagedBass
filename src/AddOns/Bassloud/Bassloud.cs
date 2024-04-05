@@ -30,7 +30,7 @@ namespace ManagedBass.Loud
         /// Retrieves the level of a loudness measurement.
         /// </summary>
         /// <param name="Handle">The loudness measurement handle.</param>
-        /// <param name="Mode">The measurement type to retrieve. One of the following.</param>
+        /// <param name="Mode">The measurement type to retrieve. One of the following. BassFlags.BassLoudnessCurrent, BassFlags.BassLoudnessIntegrated, BassFlags.BassLoudnessRange, BassFlags.BassLoudnessPeak, BassFlags.BassLoudnessTruePeak.</param>
         /// <param name="Level">Pointer to a variable to receive the measurement level.</param>
         /// <returns>If successful, TRUE is returned, else FALSE is returned. Use <see cref="Bass.LastError"/> to get the error code.</returns>
         /// <exception cref="Errors.Handle"><paramref name="Handle"/> is not valid.</exception>
