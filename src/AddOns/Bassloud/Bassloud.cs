@@ -9,12 +9,12 @@ namespace ManagedBass.Loud
 
         #region Version
         [DllImport(DllName)]
-        static extern int BASS_Loudness_GetVersion();
+        static extern int GetVersion();
 
         /// <summary>
         /// Gets the Version of BassFx that is loaded.
         /// </summary>
-        public static Version Version => Extensions.GetVersion(BASS_Loudness_GetVersion());
+        public static Version Version => Extensions.GetVersion(GetVersion());
         #endregion
 
         /// <summary>
