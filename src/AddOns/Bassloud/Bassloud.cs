@@ -24,7 +24,7 @@ namespace ManagedBass.Loud
         /// <returns>If successful, the loudness measurement's channel handle is returned, else 0 is returned. Use <see cref="Bass.LastError" /> to get the error code.</returns>
         /// <exception cref="Errors.Handle"><paramref name="Handle"/> is not valid.</exception>
         [DllImport(DllName, EntryPoint = "BASS_Loudness_GetChannel")]
-        public static extern int BASS_Loudness_GetChannel(int Handle);
+        public static extern int GetChannel(int Handle);
 
         /// <summary>
         /// Retrieves the level of a loudness measurement.
@@ -37,7 +37,7 @@ namespace ManagedBass.Loud
         /// <exception cref="Errors.Parameter"><paramref name="Mode"/> is not valid. If requesting a duration with BASS_LOUDNESS_CURRENT then it exceeds what has been enabled.</exception>
         /// <exception cref="Errors.NotAvailable">The requested measurement has not been enabled.</exception>
         [DllImport(DllName, EntryPoint = "BASS_Loudness_GetLevel")]
-        public static extern bool BASS_Loudness_GetLevel(int Handle, BassFlags Mode, ref float Level);
+        public static extern bool GetLevel(int Handle, BassFlags Mode, ref float Level);
 
         /// <summary>
         /// Starts loudness measurement on a channel.
@@ -49,7 +49,7 @@ namespace ManagedBass.Loud
         /// <exception cref="Errors.Handle"><paramref name="Handle"/> is not valid.</exception>
         /// <exception cref="Errors.Memory">There is insufficient memory.</exception>
         [DllImport(DllName, EntryPoint = "BASS_Loudness_Start", CharSet = CharSet.Unicode)]
-        public static extern int BASS_Loudness_Start(int Handle, BassFlags Flags, int Priority);
+        public static extern int Start(int Handle, BassFlags Flags, int Priority);
 
         /// <summary>
         /// Stops a loudness measurement or all loudness measurements on a channel.
@@ -58,6 +58,6 @@ namespace ManagedBass.Loud
         /// <returns>If successful, TRUE is returned, else FALSE is returned. Use <see cref="Bass.LastError"/> to get the error code.</returns>
         /// <exception cref="Errors.Handle"><paramref name="Handle"/> is not valid.</exception>
         [DllImport(DllName, EntryPoint = "BASS_Loudness_Stop")]
-        public static extern bool BASS_Loudness_Stop(int Handle);
+        public static extern bool Stop(int Handle);
     }
 }
