@@ -6,7 +6,7 @@
         <AssemblyName>ppy.ManagedBass.Loud</AssemblyName>
         <PackageId>ppy.ManagedBass.Loud</PackageId>
         <Authors>MathewSachin</Authors>
-        <Version>3.0.5</Version>
+        <Version>3.0.0</Version>
         <Description>ManagedBass BASSLoud AddOn</Description>
         <PackageProjectUrl>https://github.com/ManagedBass/ManagedBass</PackageProjectUrl>
         <PackageIcon>icon.png</PackageIcon>
