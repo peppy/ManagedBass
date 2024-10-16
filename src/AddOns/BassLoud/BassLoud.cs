@@ -8,7 +8,7 @@ namespace ManagedBass.Loud
         const string DllName = "bassloud";
 
         #region Version
-        [DllImport(DllName)]
+        [DllImport(DllName, EntryPoint = "BASS_Loudness_GetVersion")]
         static extern int GetVersion();
 
         /// <summary>
